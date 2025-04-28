@@ -1,0 +1,385 @@
+{
+  "menu_groups": [
+    {
+      "group_id": 1,
+      "group_title": "bestseller",
+      "group_details": [
+        {
+          "food_id": 22,
+          "food_title": "Big Mac",
+          "food_img": "./images/Menu images/big-mac.png",
+          "food_text": "Two beef patties, cheese, lettuce, onion and pickles",
+          "food_description": " The McDonald's Big Mac starts with two 100% pure all beef patties and Big Mac Sauce sandwiched between a sesame seed bun. It’s topped off with pickles, crisp shredded lettuce, finely chopped onion and a slice of American cheese.",
+          "food_calories": " 494 Kcal ",
+          "food_rating": 4,
+          "food_price": 18,
+          "hasOffer": true
+        },
+        {
+          "food_id": 21,
+          "food_title": "Royal Cheeseburger ",
+          "food_img": "./images/Menu images/CheesebugerRoyalDouble.png",
+          "food_text": "beef, melted cheese, sliced ​​pickles, chopped onions, ketchup and mustard",
+          "food_description": "McDonald’s Royal Double Cheeseburger for cheese lovers. A double portion of extra juicy, perfectly cooked premium beef, two slices of melted cheese, thinly sliced ​​pickles, chopped onions, ketchup and mustard. All served in a warm IP-Suisse quality flour bun. No wonder the McDonald’s Switzerland Royal Double Cheeseburger is royally good!",
+          "food_calories": " 731 Kcal ",
+          "food_rating": 5,
+          "food_price": 20
+        },
+        {
+          "food_id": 62,
+          "food_title": "Spicy Maple",
+          "food_img": "./images/Menu images/maple-bacon.png",
+          "food_text": "cheese curds, spicy maple drizzle and crispy bacon",
+          "food_description": "Power Play Poutine - Spicy Maple and Bacon with Rich gravy, melty cheese curds, spicy maple drizzle, and crispy hickory-smoked bacon on top of our World Famous Fries. This perfect balance of sweet and spicy lights the lamp with every bite.",
+          "food_calories": " 950 cal ",
+          "food_rating": 4,
+          "food_price": 13.6,
+          "hasOffer": true
+        },
+        {
+          "food_id": 33,
+          "food_title": "Mocha Latte",
+          "food_img": "./images/Menu images/mocha-latte.png",
+          "food_text": "espresso beansm, milk, chocolate syrup and whipped light cream",
+          "food_description": "A McCafé Mocha Latte is made with espresso beans that are sustainably sourced from Rainforest Alliance Certified farms, steamed whole milk, rich chocolate syrup and whipped light cream and chocolate drizzle. The added chocolate syrup is the main difference between a Mocha and a Latte",
+          "food_calories": " 290 cal ",
+          "food_rating": 5,
+          "food_price": 6.5,
+          "hasOffer": true
+        },
+        {
+          "food_id": 82,
+          "food_title": "Chicken & Bacon Salad",
+          "food_img": "./images/Menu images/Chicken-Bacon-Salad.png",
+          "food_text": "salad, chicken breast, bacon, lettuce and sliced tomato",
+          "food_description": "Crispy Chicken and Bacon Salad Freshly prepared salad with chicken breast in a crispy coating, bacon, lettuce, cucumber, sliced tomato and red onion. Nutrition and allergen information do not include dressing.",
+          "food_calories": " 320 Kcal ",
+          "food_rating": 4,
+          "food_price": 9.2
+        },
+        {
+          "food_id": 42,
+          "food_title": "Mc Nuggets",
+          "food_img": "./images/Menu images/Sharebox-nuggets.png",
+          "food_text": "6x Chicken Selects with 12x Chicken McNuggets",
+          "food_description": "6x Chicken Selects with 12x Chicken McNuggets, 2x McNuggets Dips and 2x Selects Dips. Serves 4 people. Nutrition and allergen information do not include dips..Chicken McNuggets are made with all white meat chicken and no artificial colors, flavors, or preservatives.",
+          "food_calories": " 1240 Kcal ",
+          "food_rating": 5,
+          "food_price": 17
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "group_title": "burgers",
+      "group_details": [
+        {
+          "food_id": 21,
+          "food_title": "Royal Cheeseburger ",
+          "food_img": "./images/Menu images/CheesebugerRoyalDouble.png",
+          "food_text": "beef, melted cheese, sliced ​​pickles, chopped onions, ketchup and mustard",
+          "food_description": "McDonald’s Royal Double Cheeseburger for cheese lovers. A double portion of extra juicy, perfectly cooked premium beef, two slices of melted cheese, thinly sliced ​​pickles, chopped onions, ketchup and mustard. All served in a warm IP-Suisse quality flour bun. No wonder the McDonald’s Switzerland Royal Double Cheeseburger is royally good!",
+          "food_calories": " 731 Kcal ",
+          "food_rating": 5,
+          "food_price": 20
+        },
+        {
+          "food_id": 22,
+          "food_title": "Big Mac",
+          "food_img": "./images/Menu images/big-mac.png",
+          "food_text": "Two beef patties, cheese, lettuce, onion and pickles",
+          "food_description": " The McDonald's Big Mac starts with two 100% pure all beef patties and Big Mac Sauce sandwiched between a sesame seed bun. It’s topped off with pickles, crisp shredded lettuce, finely chopped onion and a slice of American cheese",
+          "food_calories": " 494 Kcal ",
+          "food_rating": 5,
+          "food_price": 18,
+          "hasOffer": true
+        },
+        {
+          "food_id": 23,
+          "food_title": "Crispy BBQ Smokehouse",
+          "food_img": "./images/Menu images/crispy-smokehouse.png",
+          "food_text": "chicken breast, smoky BBQ sauce, cheddar cheese, red onion",
+          "food_description": " Crispy BBQ Smokehouse 100% chicken breast fillet in a crispy, crunchy coating with a smoky BBQ sauce, cheddar cheese, red onion, lettuce, all in a delicious sourdough-style sesame topped bun.",
+          "food_calories": " 560 Kcal ",
+          "food_rating": 4,
+          "food_price": 14.5
+        },
+        {
+          "food_id": 24,
+          "food_title": "Philly Cheese",
+          "food_img": "./images/Menu images/philly-cheese.png",
+          "food_text": "Two beefs, cheese slice, grilled and crispy onions",
+          "food_description": " Two delicious beef burgers layered with cheese sauce, a cheese slice, grilled and crispy onions, and pickles, all nestled in a toasted bun.",
+          "food_calories": " 630 Kcal ",
+          "food_rating": 5,
+          "food_price": 19.5
+        },
+        {
+          "food_id": 25,
+          "food_title": "Quarter Pounder Deluxe",
+          "food_img": "./images/Menu images/CheeseDeluxe.png",
+          "food_text": "Crisp shredded lettuce, three Roma tomato slices, fresh beef",
+          "food_description": " McDonald's Quarter Pounder with Cheese Deluxe is a fresh take on a classic burger. Layered with two slices of melty American cheese, creamy mayo, slivered onions and tangy pickles on a soft, fluffy sesame seed hamburger bun",
+          "food_calories": " 630 Kcal ",
+          "food_rating": 5,
+          "food_price": 18.75,
+          "hasOffer": true
+        },
+        {
+          "food_id": 26,
+          "food_title": "Big Tasty Double",
+          "food_img": "./images/Menu images/BigTastyDouble.png",
+          "food_text": "beef, fresh tomatoes, crunchy salad ,three slices of melted cheese",
+          "food_description": " The Big Tasty is available in a Double version for twice the pleasure. The Big Tasty Double from McDonald is irresistible with its double portion of delicious juicy beef, fresh tomatoes, crunchy salad leaves and three slices of melted cheese for even more pleasure, served in a warm bun made with IP-Suisse quality flour. We almost forgot the incomparable sauce which adds a delicately smoky touch!",
+          "food_calories": " 885 Kcal ",
+          "food_rating": 5,
+          "food_price": 18.6,
+          "hasOffer": true
+        }
+      ]
+    },
+    {
+      "group_id": 3,
+      "group_title": "coffee",
+      "group_details": [
+        {
+          "food_id": 31,
+          "food_title": "Iced Mocha Latte",
+          "food_img": "./images/Menu images/IcedMocha.png",
+          "food_text": "milk, chocolate syrup, light cream and chocolate drizzle",
+          "food_description": "Featuring sustainably sourced espresso beans from Rainforest Alliance Certified farms, the refreshingly cool Iced Mocha latte is made with whole milk, chocolate syrup, and topped with whipped light cream and chocolate drizzle. Refresh and relax with this iced mocha treat full of chocolatey flavor and rich creaminess",
+          "food_calories": " 270 cal ",
+          "food_rating": 4,
+          "food_price": 6.75
+        },
+        {
+          "food_id": 32,
+          "food_title": "Caramel Frappé",
+          "food_img": "./images/Menu images/CaramelFrappe.png",
+          "food_text": "caramel, coffee, ice and whipped light cream",
+          "food_description": "The McCafé Caramel Frappé recipe blends rich caramel flavor with a hint of coffee, blended with ice and is topped with whipped light cream.Available in small, medium and large sizes. There are 420 calories in a small Caramel Frappé.",
+          "food_calories": " 420 cal ",
+          "food_rating": 5,
+          "food_price": 7
+        },
+        {
+          "food_id": 33,
+          "food_title": "Mocha Latte",
+          "food_img": "./images/Menu images/mocha-latte.png",
+          "food_text": "espresso beansm, milk, chocolate syrup and whipped light cream",
+          "food_description": "A McCafé Mocha Latte is made with espresso beans that are sustainably sourced from Rainforest Alliance Certified™ farms, steamed whole milk, rich chocolate syrup and whipped light cream and chocolate drizzle. The added chocolate syrup is the main difference between a Mocha and a Latte",
+          "food_calories": " 290 cal ",
+          "food_rating": 5,
+          "food_price": 6.5,
+          "hasOffer": true
+        }
+      ]
+    },
+    {
+      "group_id": 4,
+      "group_title": "chicken",
+      "group_details": [
+        {
+          "food_id": 41,
+          "food_title": "Mozzarella-Dippers",
+          "food_img": "./images/Menu images/Mozzarella-Dippers.png",
+          "food_text": "nine sticks of Mozzarella cheese coated in breadcrumbs with Salsa dip",
+          "food_description": "A portion of nine sticks of Mozzarella cheese coated in breadcrumbs and served with Salsa dip.Chicken McNuggets are made with all white meat chicken and no artificial colors, flavors, or preservatives.",
+          "food_calories": " 749 Kcal ",
+          "food_rating": 4,
+          "food_price": 12.5,
+          "hasOffer": true
+        },
+        {
+          "food_id": 42,
+          "food_title": "Mc Nuggets",
+          "food_img": "./images/Menu images/Sharebox-nuggets.png",
+          "food_text": "6x Chicken Selects with 12x Chicken McNuggets",
+          "food_description": "6x Chicken Selects with 12x Chicken McNuggets, 2x McNuggets Dips and 2x Selects Dips. Serves 4 people. Nutrition and allergen information do not include dips..Chicken McNuggets are made with all white meat chicken and no artificial colors, flavors, or preservatives.",
+          "food_calories": " 1240 Kcal ",
+          "food_rating": 5,
+          "food_price": 17
+        },
+        {
+          "food_id": 43,
+          "food_title": "Spicy Chicken Nuggets",
+          "food_img": "./images/Menu images/Spicy Chicken.png",
+          "food_text": "chicken, rapeseed oil, barbecue or cocktail sauce ",
+          "food_description": "Delicious bites of fried chicken for small appetites. You can eat Chicken McNuggets from McDonald at any time of the day, as a snack or as part of a menu. The tender pieces of chicken coated in breadcrumbs are delicately browned with Swiss rapeseed oil. This is what makes them so crispy. They are delicious on their own or with a sauce of your choice such as curry, barbecue or cocktail sauce.",
+          "food_calories": " 204 Kcal ",
+          "food_rating": 4,
+          "food_price": 11.6
+        }
+      ]
+    },
+    {
+      "group_id": 5,
+      "group_title": "drink",
+      "group_details": [
+        {
+          "food_id": 51,
+          "food_title": "Fanta Orange",
+          "food_img": "./images/Menu images/FantaOrange.png",
+          "food_text": "Orange soda from McDonald",
+          "food_description": "Sip on the bubbly, refreshing orange flavor of Fanta Orange soda from McDonald! Is McDonald's Fanta Orange caffeine-free? It sure is, making it a perfect addition to any of your favorite McDonald's items. Available in small, medium and large fountain drink sizes, there are 210 calories in a small Fanta Orange at McDonald.",
+          "food_calories": " 210 cal ",
+          "food_rating": 3,
+          "food_price": 5.3
+        },
+        {
+          "food_id": 52,
+          "food_title": "Coca-Cola",
+          "food_img": "./images/Menu images/Coke.png",
+          "food_text": "Enjoy a cold, refreshing Coca-Cola soda from McDonald's",
+          "food_description": "Enjoy a cold, refreshing Coca-Cola soda from McDonald's that complements all your menu favorites.Enjoy a cold, refreshing Coca-Cola soda from McDonald's that complements all your menu favorites",
+          "food_calories": " 210 cal ",
+          "food_rating": 5,
+          "food_price": 8
+        },
+
+        {
+          "food_id": 53,
+          "food_title": "Bottled Water",
+          "food_img": "./images/Menu images/DasaniBottledWater.png",
+          "food_text": "Satisfy your thirst with the cool and refreshing DASANI purified water",
+          "food_description": "Satisfy your thirst with the cool and refreshing DASANI purified water! DASANI water is purified water enhanced with minerals for a pure, fresh taste. There are 0 calories in the DASANI water bottle from McDonald. Order a bottle of purified drinking water from our full menu in the app using contactless Mobile Order & Pay",
+          "food_calories": " 0 cal ",
+          "food_rating": 3,
+          "food_price": 2
+        },
+        {
+          "food_id": 54,
+          "food_title": "Strawberry Smoothie",
+          "food_img": "./images/Menu images/StrawberryBanana.png",
+          "food_text": "strawberry & banana fruit ,creamy low fat yogurt and ice",
+          "food_description": "The McCafé Strawberry Banana Smoothie recipe features the perfect combination of real strawberry and banana fruit purees and juices, blended with creamy low fat yogurt and ice. As a part of the McCafé Menu, Strawberry Banana Smoothie is available in small, medium, and large sizes. ",
+          "food_calories": " 190 cal ",
+          "food_rating": 4,
+          "food_price": 6.75
+        }
+      ]
+    },
+    {
+      "group_id": 6,
+      "group_title": "fries",
+      "group_details": [
+        {
+          "food_id": 61,
+          "food_title": "French Fries",
+          "food_img": "./images/Menu images/french fries.png",
+          "food_text": "our fries are cut from whole potatoes. That's why they're so delicious",
+          "food_description": "Everyone wants to know why McDonald French Fries taste so good—it’s a simple answer. McDonald's World Famous Fries are made with premium potatoes such as the Russet Burbank and the Shepody. With 0g of trans fat per labeled serving, these epic fries are crispy and golden on the outside and fluffy on the inside. ",
+          "food_calories": " 230 cal ",
+          "food_rating": 5,
+          "food_price": 9.75
+        },
+        {
+          "food_id": 62,
+          "food_title": "Spicy Maple",
+          "food_img": "./images/Menu images/maple-bacon.png",
+          "food_text": "cheese curds, spicy maple drizzle and crispy bacon",
+          "food_description": "Power Play Poutine - Spicy Maple and Bacon with Rich gravy, melty cheese curds, spicy maple drizzle, and crispy hickory-smoked bacon on top of our World Famous Fries. This perfect balance of sweet and spicy lights the lamp with every bite.",
+          "food_calories": " 950 cal ",
+          "food_rating": 4,
+          "food_price": 13.6,
+          "hasOffer": true
+        }
+      ]
+    },
+    {
+      "group_id": 7,
+      "group_title": "dessert",
+      "group_details": [
+        {
+          "food_id": 71,
+          "food_title": "Chocolate Muffin",
+          "food_img": "./images/Menu images/MuffinChocolate.png",
+          "food_text": "chip cookie, milk, crunchy dark chocolate chips ",
+          "food_description": "What could possibly be better than a fluffy, airy chocolate muffin? Well done: the same one, but topped with crunchy chocolate chips.",
+          "food_calories": " 458 Kcal ",
+          "food_rating": 4,
+          "food_price": 3
+        },
+        {
+          "food_id": 72,
+          "food_title": "McFlurry KITKAT",
+          "food_img": "./images/Menu images/McFlurryKitKat.png",
+          "food_text": "milk ice cream with crunchy KitKat pieces",
+          "food_description": "With the McFlurry KitKat , enjoy a creamy Swiss milk ice cream with crunchy KitKat pieces and a delicious chocolate sauce. The perfect combination of freshness and sweetness! Available now in Regular or Maxi version. Offer for a limited time at McDonald",
+          "food_calories": " 512 Kcal ",
+          "food_rating": 5,
+          "food_price": 3.75,
+          "hasOffer": true
+        },
+        {
+          "food_id": 73,
+          "food_title": "McFlurry Ovomaltine",
+          "food_img": "./images/Menu images/McFlurryOvomaltine.png",
+          "food_text": "Ovomaltine powder, Swiss chocolate, milk",
+          "food_description": "The Ovomaltine McFlurry is back at McDonald's. But only for a limited time! We add Ovomaltine powder, the famous Swiss chocolate with a delicious malted flavour, to our delicious ice cream prepared with good Swiss milk, which we mix delicately to preserve its smoothness and lightness, the Ovomaltine McFlurry is ready to be enjoyed. Irresistible! Available in Regular or Maxi format in your nearest McDonald's restaurant",
+          "food_calories": " 288 Kcal ",
+          "food_rating": 5,
+          "food_price": 3.45
+        },
+        {
+          "food_id": 74,
+          "food_title": "Mixed Berry Muffin",
+          "food_img": "./images/Menu images/Mixed-Berry-Muffin.png",
+          "food_text": "sweet raspberry jam and sprinkled with a crunchy granola",
+          "food_description": "A berry muffin filled with a sweet raspberry jam and sprinkled with a crunchy granola topping. Starting this month, we'll be phasing out our McCafé Bakery line-up, including the Apple Fritter, Blueberry Muffin and Cinnamon Roll. ",
+          "food_calories": " 320 Kcal ",
+          "food_rating": 4,
+          "food_price": 4.2,
+          "hasOffer": true
+        },
+        {
+          "food_id": 75,
+          "food_title": "Donut",
+          "food_img": "./images/Menu images/Donut.png",
+          "food_text": "fruity flavour of raspberry with nougatine",
+          "food_description": "Adorable on the outside, delicious on the inside: the heart-shaped RMHC Donut. A light doughnut meets the fruity flavour of raspberry, topped with icing and nougatine. A unique taste and shape that not only pleases your taste buds: for each donut you enjoy, McDonald and its franchisees donut. All you have to do is try it!",
+          "food_calories": " 230 Kcal ",
+          "food_rating": 4,
+          "food_price": 4.35
+        }
+      ]
+    },
+    {
+      "group_id": 8,
+      "group_title": "vegan",
+      "group_details": [
+        {
+          "food_id": 81,
+          "food_title": "Grilled Chicken & Salad",
+          "food_img": "./images/Menu images/GrilledChickenSalad.png",
+          "food_text": "lettuce, grilled chicken, bacon, cucumber, sliced tomato",
+          "food_description": "Grilled Chicken & Bacon Salad Freshly prepared salad with lettuce, grilled chicken breast, bacon, cucumber, sliced tomato and red onion. Nutrition and allergen information do not include dressing.",
+          "food_calories": " 185 Kcal ",
+          "food_rating": 3,
+          "food_price": 8,
+          "hasOffer": true
+        },
+        {
+          "food_id": 82,
+          "food_title": "Chicken & Bacon Salad",
+          "food_img": "./images/Menu images/Chicken-Bacon-Salad.png",
+          "food_text": "salad, chicken breast, bacon, lettuce and sliced tomato",
+          "food_description": "Freshly prepared salad with chicken breast in a crispy coating, bacon, lettuce, cucumber, sliced tomato and red onion. Nutrition and allergen information do not include dressing.",
+          "food_calories": " 320 Kcal ",
+          "food_rating": 4,
+          "food_price": 9.2
+        },
+        {
+          "food_id": 83,
+          "food_title": "Side Salad",
+          "food_img": "./images/Menu images/side-salad.png",
+          "food_text": "lettuce, cucumber, sliced tomato and red onion",
+          "food_description": "Freshly prepared salad with lettuce, cucumber, sliced tomato and red onion. Nutrition and allergen information do not include dressing.",
+          "food_calories": " 18 Kcal ",
+          "food_rating": 3,
+          "food_price": 4.7
+        }
+      ]
+    }
+  ]
+}

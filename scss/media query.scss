@@ -1,0 +1,284 @@
+//TODO  Max-Width 1200px
+@media (max-width: 75em) {
+  .app {
+    &__text {
+      width: 80%;
+    }
+  }
+}
+
+//TODO  Max-Width 992px
+@media (max-width: 62em) {
+  html {
+    font-size: 90%;
+  }
+  .heading-primary {
+    font-size: 2.8rem !important;
+  }
+  .navbar {
+    &-brand {
+      margin-right: 40px !important;
+    }
+  }
+
+  .hero {
+    margin-top: 120px;
+    &__delivery-btn {
+      top: -25px;
+    }
+  }
+
+  .footer-container {
+    margin-top: 60px;
+    padding-left: 0;
+  }
+
+  .search {
+    &__container {
+      padding: 80px 0px;
+    }
+    &__title {
+      font-size: 2.5rem !important;
+    }
+    &__bg-img {
+      transform: scale(0.8);
+      &-2 {
+        top: 190px;
+      }
+    }
+    &__input-container {
+      width: 70%;
+    }
+  }
+
+  .menu {
+    .modal {
+      &-dialog {
+        max-width: 750px;
+      }
+    }
+  }
+}
+
+//TODO  Max-Width 768px
+@media (max-width: 48em) {
+  .heading-primary {
+    font-size: 2rem !important;
+  }
+  #offcanvasNavbar {
+    padding: 16px;
+  }
+  .navbar__btn-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+
+  .hero {
+    &__text {
+      width: 60%;
+      margin: 0 auto;
+    }
+    &__heading {
+      width: 90%;
+      margin: 0 auto;
+    }
+    &__delivery-btn {
+      position: absolute;
+      top: 0px;
+      left: 60%;
+    }
+  }
+
+  .sale {
+    &__card {
+      max-width: 420px;
+      margin: 0 auto;
+      height: auto !important;
+      padding: 32px 0px 32px 32px !important;
+    }
+  }
+  .app {
+    width: 100%;
+    border-radius: 50rem 50rem 0 0;
+    & .text-container {
+      width: 80%;
+      margin: 90px auto 0px;
+    }
+    &__text {
+      width: 100%;
+    }
+  }
+  .search {
+    &__title {
+      font-size: 2rem !important;
+    }
+    &__input-container {
+      width: 90%;
+    }
+
+    &__bg-img {
+      filter: blur(2px);
+    }
+  }
+
+  .menu {
+    .modal {
+      &-dialog {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      &-img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+//TODO  Max-Width 576px
+@media (max-width: 36em) {
+  .navbar {
+    &__btn-container {
+      right: 80px;
+    }
+    &__account-btn {
+      display: none !important;
+    }
+    &__btn-container-mobile {
+      display: block !important;
+      .navbar__account-btn {
+        display: grid !important;
+      }
+    }
+  }
+
+  .hero {
+    &__text {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    &__delivery-btn {
+      transform: scale(0.7);
+      left: 50%;
+    }
+    &__order-btn {
+      font-size: 16px !important;
+      padding: 12px 16px !important;
+    }
+  }
+
+  .menu {
+    & .card-container > div {
+      min-width: 298px !important;
+    }
+    & .card__img-content {
+      &::before {
+        height: 90px;
+      }
+      & .card__img {
+        height: 130px;
+      }
+    }
+  }
+
+  .shop-cart .image-container {
+    width: 80px;
+  }
+
+  .sale {
+    &__card {
+      &-text {
+        width: 60% !important;
+      }
+      &-img {
+        filter: opacity(30%);
+        transform: scale(0.9);
+        &--1 {
+          right: -65px;
+        }
+        &--2 {
+          top: 80px;
+        }
+        &--3 {
+          top: 80px;
+          right: -65px;
+          transform: scale(0.8);
+        }
+      }
+      &-price {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .app {
+    & .text-container {
+      width: 90%;
+      margin: 80px auto 20px;
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  .search {
+    &__container {
+      padding: 60px 0px;
+    }
+    &__title {
+      font-size: 1.5rem !important;
+    }
+    &__text {
+      width: 70%;
+      margin: 0 auto;
+    }
+    &__input-container {
+      width: 100%;
+    }
+    &__bg-img {
+      display: none;
+    }
+  }
+
+  .menu {
+    .modal {
+      &-dialog {
+        max-width: 90%;
+      }
+      &-title {
+        font-size: 24px;
+      }
+      &-descript {
+        font-size: 12px !important;
+      }
+
+      &-addCart-btn {
+        width: auto;
+        font-size: 16px !important;
+      }
+      &-btn-container {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .toast {
+    &-header h5 {
+      font-size: 12px !important;
+    }
+    &-img {
+      width: 40px;
+      height: auto;
+    }
+  }
+  .footer {
+    &__logo-title {
+      font-size: 22px;
+    }
+    &__logo-img {
+      width: 60px;
+    }
+  }
+}

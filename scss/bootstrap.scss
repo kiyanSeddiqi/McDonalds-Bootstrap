@@ -1,0 +1,189 @@
+// Color palette
+$primary: #c90000;
+$secondary: #ffc300;
+$light-yellow: #fffde6;
+$gray: #f1f1f1;
+$dark-gray: #7d7c7c;
+$dark: #323232;
+$body-color: #504f4f;
+$body-bg: #fdfcf7;
+$border-color: #e3e3e3;
+$layer: rgba(0, 0, 0, 0.4);
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light-yellow": $light-yellow,
+  "gray": $gray,
+  "dark-gray": $dark-gray,
+  "dark": $dark,
+  "layer": $layer,
+) !default;
+
+// Typography
+$font-family-sans-serif: "Poppins", sans-serif;
+$font-size-base: 0.625rem; // 10px
+$h1-font-size: $font-size-base * 4.8 !default;
+$h2-font-size: $font-size-base * 3.2 !default;
+$h3-font-size: $font-size-base * 2.4 !default;
+$h4-font-size: $font-size-base * 2 !default;
+$h5-font-size: $font-size-base * 1.6 !default;
+$h6-font-size: $font-size-base * 1.4 !default;
+
+// Spacing
+$spacer: 0.625rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.8,
+  2: $spacer * 1.2,
+  3: $spacer * 1.6,
+  4: $spacer * 2,
+  5: $spacer * 2.4,
+  6: $spacer * 3,
+  7: $spacer * 3.2,
+  8: $spacer * 4.8,
+  9: $spacer * 5,
+) !default;
+$modal-inner-padding: 16px;
+
+// Border-radius
+$border-radius: 8px; // rounded-2
+$border-radius-sm: 4px; // rounded-1
+$border-radius-lg: 12px; // rounded-3
+$border-radius-xl: 20px; // rounded-4
+$border-radius-xxl: 100px; // rounded-5
+
+// Buttons
+$btn-font-size: 16px;
+$btn-font-weight: 500;
+$button-radius: $border-radius-xxl;
+$btn-border-radius: $button-radius;
+$btn-border-radius-sm: $border-radius;
+$btn-border-radius-lg: $button-radius;
+$btn-padding-x: 16px;
+$btn-padding-y: 8px;
+$btn-padding-x-sm: $btn-padding-x;
+$btn-padding-y-sm: $btn-padding-y;
+$btn-padding-x-lg: $btn-padding-x;
+$btn-padding-y-lg: $btn-padding-y;
+
+// Container
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px,
+  xxl: 1320px,
+) !default;
+
+// Navbar
+$nav-link-font-size: 1rem;
+$nav-link-font-weight: 600;
+$navbar-nav-link-padding-x: 0;
+$navbar-padding-y: 12px;
+$navbar-brand-margin-end: 5rem;
+$navbar-light-hover-color: $primary;
+$navbar-light-color: $dark;
+$navbar-light-active-color: $primary;
+$navbar-toggler-font-size: 18px;
+$dropdown-link-hover-bg: $primary;
+$dropdown-link-hover-color: #fff;
+$dropdown-font-size: 1rem;
+$dropdown-link-color: $dark;
+$dropdown-spacer: 10px;
+
+// Nav tab & Nav pills
+$nav-pills-link-active-color: $dark;
+$nav-pills-link-active-bg: $secondary;
+$nav-pills-border-radius: $border-radius-xxl;
+
+// Offcanvas
+$offcanvas-horizontal-width: 350px;
+
+// Toast
+$toast-max-width: 360px;
+$toast-background-color: $body-bg;
+$toast-padding-y: 0.75rem;
+
+// Options
+$enable-rfs: false;
+$enable-negative-margins: true;
+$icon-link-icon-transform: translate3d(0, -0.25em, 0);
+$box-shadow-sm: 0 0 0.7rem rgba(#000, 0.3);
+$form-select-color: $dark;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Dark Mode Color Palette
+@include color-mode(dark) {
+  --bs-primary: #f82a2a;
+  --bs-dark: #fff;
+  --bs-gray: #202324;
+
+  .text-dark {
+    color: var(--bs-dark) !important;
+  }
+
+  .text-primary {
+    color: var(--bs-primary) !important;
+  }
+
+  .hero__delivery-btn {
+    background-color: #f1f1f1;
+    span {
+      color: black !important;
+    }
+  }
+
+  .nav-pills {
+    & .nav-link {
+      &:hover:not(.active) {
+        color: black;
+      }
+    }
+  }
+
+  .btn-outline-primary {
+    background-color: #fff;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .shop-cart {
+    & .fa-plus,
+    &__order-num,
+    & .fa-minus {
+      color: $secondary !important;
+    }
+  }
+
+  .toast,
+  #shopCartCanvas {
+    .btn-close {
+      filter: none;
+    }
+  }
+
+  .shop-cart {
+    &__item {
+      &:hover {
+        background-color: #1c1d1d;
+      }
+    }
+  }
+
+  .navbar .nav-link {
+    &:not(.active) {
+      color: var(--bs-dark);
+    }
+    color: var(--bs-primary);
+  }
+  .dropdown-item {
+    color: var(--bs-dark);
+  }
+
+  .footer {
+    background-color: #312e00 !important;
+  }
+}

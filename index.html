@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>McDonald's</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media query.css" />
+    <link rel="stylesheet" href="./assets/css/all.css" />
+    <link rel="shortcut icon" href="./images/logo-PNG.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fs-5 fixed-top" id="navbar">
+      <div class="container-xl px-xl-2 px-6">
+        <a class="navbar-brand py-0" href="#">
+          <img src="./images/logo.svg" alt="logo" class="img-fluid" />
+        </a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="fa-solid fa-burger-lettuce fs-2"></i>
+        </button>
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-start" data-bs-hideresize="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar-Label" data-bs-scroll="true">
+          <div class="offcanvas-header p-0 fs-5 align-items-start">
+            <img src="./images/logo-PNG.png" alt="logo" class="img-fluid rounded-2" />
+            <button type="button" class="btn-close text-reset opacity-100" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body p-0">
+            <ul class="navbar-nav column-gap-lg-8 column-gap-6 row-gap-3 mt-md-0 mt-3 mb-sm-0 mb-3">
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-bs-toggle" href="#menu" aria-expanded="false" data-bs-toggle="dropdown">
+                  Menu
+                  <i class="fa fa-angle-down fs-6 dropdown-icon ms-1"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#bestseller">Best seller</a></li>
+                  <li><a class="dropdown-item" href="#burgers">Burgers</a></li>
+                  <li><a class="dropdown-item" href="#coffee">Coffees</a></li>
+                  <li><a class="dropdown-item" href="#chicken">Fried Chicken </a></li>
+                  <li><a class="dropdown-item" href="#drink">Drinks</a></li>
+                  <li><a class="dropdown-item" href="#fries">Fries & Sides</a></li>
+                  <li><a class="dropdown-item" href="#dessert">Desserts</a></li>
+                  <li><a class="dropdown-item" href="#vegan">vegan</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sale">Sale off</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#app">App</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="navbar__btn-container-mobile d-none align-items-center gap-2 mt-2">
+              <!-- Account Btn -->
+              <div class="navbar__account-btn gap-2">
+                <button class="btn btn-outline-primary d-block" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
+                <button class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#logInModal">Log In</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navbar Buttons -->
+        <div class="navbar__btn-container d-flex align-items-center gap-md-4 gap-5 justify-content-sm-center justify-content-end">
+          <!-- Account Btn -->
+          <div class="navbar__account-btn d-flex gap-2">
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#logInModal">Log In</button>
+          </div>
+          <!-- Shopping Cart Btn -->
+          <button class="navbar__cart-btn btn p-0 fs-4 position-relative" data-bs-toggle="offcanvas" data-bs-target="#shopCartCanvas" aria-controls="shopCartCanvas">
+            <i class="fa-solid fa-cart-shopping" title="Shopping Cart"></i>
+            <span class="badge rounded-pill bg-primary cart-icon-number">
+              0
+              <span class="visually-hidden">shopping cart content</span>
+            </span>
+          </button>
+          <!-- Dark Theme Btn -->
+          <button class="navbar__theme-btn d-flex btn p-0 fs-4" title="Theme">
+            <i class="navbar__theme-icon navbar__theme-icon-sun fa-solid fa-sun-bright"> </i>
+            <i class="navbar__theme-icon navbar__theme-icon-moon fa-solid fa-moon show-icon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="false">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <h1 class="modal-title fs-5" id="signUpModalLabel">Create New Account</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="text-dark">
+              <div class="form-floating mb-3 fs-6">
+                <input type="text" class="form-control fs-5 rounded-5 ps-4" id="username" placeholder="username" required />
+                <label for="username" class="ps-4">User name</label>
+              </div>
+              <div class="form-floating mb-3 fs-6">
+                <input type="email" class="form-control fs-5 rounded-5 ps-4" id="email" placeholder="name@example.com" required />
+                <label for="email" class="ps-4">Email address</label>
+              </div>
+              <div class="form-floating mb-3 fs-6">
+                <input type="password" class="form-control fs-5 rounded-5 ps-4" id="password" placeholder="Choose Password" required />
+                <label for="password" class="ps-4">Password</label>
+              </div>
+              <div class="form-floating mb-3 fs-6">
+                <input type="password" class="form-control fs-5 rounded-5 ps-4" id="confirmPassword" placeholder="Confirm Password" required />
+                <label for="confirmPassword" class="ps-4">Confirm Password</label>
+              </div>
+              <div class="mb-4">
+                <input type="checkbox" class="form-check-input fs-5 me-1" id="checkboxInput" required />
+                <label class="form-check-label fs-5" for="checkboxInput">I agree with rules & conditions</label>
+              </div>
+              <div class="form__btn">
+                <button type="submit" class="btn btn-outline-primary">Sign Up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Log In Modal -->
+    <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="false">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <h1 class="modal-title fs-5" id="logInModalLabel">Log In to Your Account</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="text-dark">
+              <div class="form-floating mb-3 fs-6">
+                <input type="text" class="form-control fs-5 rounded-5 ps-4" id="loginUsername" placeholder="username" required />
+                <label for="loginUsername" class="ps-4">User name</label>
+              </div>
+
+              <div class="form-floating mb-3 fs-6">
+                <input type="password" class="form-control fs-5 rounded-5 ps-4" id="loginPass" placeholder="Choose Password" required />
+                <label for="loginPass" class="ps-4">Password</label>
+              </div>
+              <div class="mb-4">
+                <a href="#" class="text-primary fw-semibold fs-6"> Forgot password</a>
+              </div>
+              <div class="form__btn">
+                <button type="submit" class="btn btn-primary">Log In</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Shopping cart Offcanvas -->
+    <div class="offcanvas offcanvas-end shop-cart" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="shopCartCanvas" aria-labelledby="shopCartCanvasLabel">
+      <div class="offcanvas-header align-items-center text-black border-bottom bg-secondary">
+        <h2 class="shop-cart__heading fs-5 fw-semibold mb-0" id="shopCartCanvasLabel">
+          Shopping cart
+          <span class="mb-0 fs-5 ms-2 fw-medium d-inline-block shop-cart__total-order"></span>
+        </h2>
+        <button type="button" class="btn-close btn-close-black opacity-100 fs-6" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="text-center mt-8">
+          <i class="fa-light fa-cart-circle-exclamation fs-1 me-1 text-primary fw-medium"></i>
+          <h5 class="fw-semibold mt-3 mb-0">Your Shopping Cart is empty!</h5>
+        </div>
+      </div>
+      <div class="offcanvas-footer d-flex p-3 justify-content-between align-items-center border-top" hidden>
+        <div class="price-container">
+          <h6 class="text-dark">Total price :</h6>
+          <p class="mb-0 fs-3 text-dark fw-semibold"><span class="cart__total-price"></span></p>
+        </div>
+        <button class="btn btn-primary rounded-2 cart__checkout" data-bs-dismiss="modal">Checkout</button>
+      </div>
+    </div>
+
+    <!-- Hero section -->
+    <header class="hero position-relative">
+      <div class="container-xl px-xl-2 px-6">
+        <div class="row align-items-center justify-content-between row-gap-9">
+          <!-- Hero Text -->
+          <div class="col-lg-5 col-md-5 hero__text-content text-md-start text-center">
+            <div class="hero__heading pe-xxl-9">
+              <h1 class="heading-primary hero__title fw-semibold lh-base mb-0">Order your favourite food</h1>
+              <p class="hero__text pe-md-9 fw-normal fs-5 mt-2 mb-lg-9 mb-7">Hamburger has many flavors, have you tried Cheese Beef Hamburger?</p>
+            </div>
+            <div class="hero__order">
+              <p class="fs-5 text-dark mb-md-2 mb-3 fw-medium">
+                Total Order :
+                <span class="fs-3 fw-semibold ms-2 hero__order-total-price"></span>
+              </p>
+              <!-- Hero Buttons -->
+              <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                <div class="btn-group py-2 px-3 border shadow me-sm-7 me-4" role="group">
+                  <button class="btn p-0 me-2">
+                    <i class="hero__icon fa-regular fa-plus"></i>
+                  </button>
+                  <div class="fs-5 d-flex align-items-center text-primary border-end border-start p-0 px-2">
+                    <span class="fw-bold hero__order-num">1</span>
+                  </div>
+                  <button class="btn p-0 ms-2">
+                    <i class="hero__icon fa-regular fa-minus"></i>
+                  </button>
+                </div>
+                <a
+                  href="#"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#shopCartCanvas"
+                  class="hero__order-btn btn btn-secondary py-3 px-lg-5 fs-4 fw-medium d-flex align-items-center gap-2 border-0 shadow flex-shrink-0"
+                >
+                  <i class="hero__icon fa-solid fa-basket-shopping"></i>
+                  Order now
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Hero Image -->
+          <div class="col-lg-7 col-md-6 hero__img-content position-relative text-center">
+            <button class="hero__delivery-btn px-sm-4 py-1 px-4 text-black">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa fa-clock fa-lg fa-fw fs-4"></i>
+                <h4 class="fw-normal mb-0 lh-base">Delivery</h4>
+              </div>
+              <span class="text-body fs-5 etxt-dark-gray">30 mins</span>
+            </button>
+            <picture>
+              <source media="(min-width:768px)" srcset="./images/hero-desktop.svg" />
+              <source media="(min-width:576px)" srcset="./images/hero-tablet.png" />
+              <source media="(max-width:576px)" srcset="./images/hero-mobile.png" />
+              <img src="./images/hero-desktop.svg" alt="hamburger" class="img-fluid hero__img" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Menu Section -->
+      <section class="menu py-9" id="menu">
+        <div class="container-xl px-xl-2 px-sm-6">
+          <div class="menu__heading text-uppercase">
+            <h2 class="fs-1 heading-primary position-relative d-inline-block fw-semibold mb-0">menu</h2>
+          </div>
+
+          <!-- Menu nav-tab -->
+          <div class="menu__nav-container overflow-x-auto" id="drag">
+            <ul class="nav nav-pills my-7 gap-xl-7 gap-4 ps-1 flex-nowrap" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active d-flex align-items-center gap-2 lh-lg"
+                  id="pills-bestseller-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#bestseller"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-bestseller"
+                  aria-selected="true"
+                >
+                  <i class="icon fa-solid fa-badge-percent fs-4"> </i>
+                  Best seller
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link d-flex align-items-center gap-2 lh-lg"
+                  id="pills-burgers-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#burgers"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-burgers"
+                  aria-selected="true"
+                >
+                  <i class="fa-solid fa-burger-lettuce fs-4"></i>
+                  Burgers
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link d-flex align-items-center gap-2 lh-lg"
+                  id="pills-coffee-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#coffee"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-coffee"
+                  aria-selected="true"
+                >
+                  <i class="fa-solid fa-mug-saucer fs-4"></i>
+                  Coffees
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link d-flex align-items-center gap-2 lh-lg"
+                  id="pills-chicken-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#chicken"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-chicken"
+                  aria-selected="true"
+                >
+                  <i class="fa-solid fa-turkey fs-4"></i>
+                  Fried chicken
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link d-flex align-items-center gap-2 lh-lg"
+                  id="pills-drink-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#drink"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-drink"
+                  aria-selected="true"
+                >
+                  <i class="fa-solid fa-martini-glass-citrus fs-4"></i>
+                  Drinks
+                </button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link d-flex align-items-center gap-2 lh-lg"
+                  id="pills-fries-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#fries"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-fries"
+                  aria-selected="true"
+                >
+                  <i class="fa-solid fa-french-fries fs-4"></i>
+                  Fries & Sides
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link d-flex align-items-center gap-2 lh-lg"
+                  id="pills-dessert-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#dessert"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-dessert"
+                  aria-selected="true"
+                >
+                  <i class="fa-solid fa-pie fs-4"></i>
+                  Desserts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link d-flex align-items-center gap-2 lh-lg"
+                  id="pills-vegan-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#vegan"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-vegan"
+                  aria-selected="true"
+                >
+                  <i class="fa-solid fa-salad fs-4"></i>
+                  Vegan
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- Tab content -->
+          <div class="tab-content mb-6" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="bestseller" role="tabpanel" aria-labelledby="pills-bestseller-tab" tabindex="0">
+              <div class="row row-gap-7 justify-content-xl-start justify-content-center card-container"></div>
+            </div>
+            <div class="tab-pane fade" id="burgers" role="tabpanel" aria-labelledby="pills-burgers-tab" tabindex="1">
+              <div class="row row-gap-7 justify-content-xl-start justify-content-center card-container"></div>
+            </div>
+            <div class="tab-pane fade" id="coffee" role="tabpanel" aria-labelledby="pills-coffee-tab" tabindex="2">
+              <div class="row row-gap-7 justify-content-xl-start justify-content-center card-container"></div>
+            </div>
+            <div class="tab-pane fade" id="chicken" role="tabpanel" aria-labelledby="pills-chicken-tab" tabindex="3">
+              <div class="row row-gap-7 justify-content-xl-start justify-content-center card-container"></div>
+            </div>
+            <div class="tab-pane fade" id="drink" role="tabpanel" aria-labelledby="pills-drink-tab" tabindex="4">
+              <div class="row row-gap-7 justify-content-xl-start justify-content-center card-container"></div>
+            </div>
+            <div class="tab-pane fade" id="fries" role="tabpanel" aria-labelledby="pills-fries-tab" tabindex="5">
+              <div class="row row-gap-7 justify-content-xl-start justify-content-center card-container"></div>
+            </div>
+            <div class="tab-pane fade" id="dessert" role="tabpanel" aria-labelledby="pills-dessert-tab" tabindex="6">
+              <div class="row row-gap-7 justify-content-xl-start justify-content-center card-container"></div>
+            </div>
+            <div class="tab-pane fade" id="vegan" role="tabpanel" aria-labelledby="pills-vegan-tab" tabindex="7">
+              <div class="row row-gap-7 justify-content-xl-start justify-content-center card-container"></div>
+            </div>
+          </div>
+          <div class="text-center mt-9">
+            <a href="#menu" class="view-all__link text-dark d-inline-block p-1 rounded-2">
+              <h4 class="mb-0">
+                View All
+                <span class="fa-regular fa-arrow-right-long ms-1"></span>
+              </h4>
+            </a>
+          </div>
+          <!-- Menu Modal -->
+          <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="false">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content border-1 border-secondary">
+                <div class="modal-header border-bottom-0 pb-0">
+                  <button type="button" class="btn-close fs-5 ms-0 me-auto rounded-circle p-0" data-bs-dismiss="modal" aria-label="Close" title="close"></button>
+
+                  <span class="modal-share-btn rounded-circle d-block fs-4 text-dark text-center" title="share this item" data-bs-dismiss="modal"
+                    ><i class="fa-sharp fa-regular fa-arrow-up-from-bracket fw-bold"></i
+                  ></span>
+                </div>
+                <div class="modal-body pt-0 pb-sm-6 pb-4 px-sm-6 px-4">
+                  <div class="row row-gap-5">
+                    <div class="col-md-4">
+                      <div class="image-container text-center">
+                        <img src="" alt="" class="modal-img" />
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="text-container">
+                        <div class="modal-heading mb-1 text-dark">
+                          <h2 class="modal-title fw-semibold mb-1"></h2>
+
+                          <p class="mb-0 fs-5 fw-medium">Price : <span class="modal-price text-primary fs-4"></span></p>
+                          <span class="modal-subtitle fs-5"></span>
+                        </div>
+                        <h5 class="fw-medium text-dark">Ingredients :</h5>
+                        <p class="modal-text fs-5 mb-2 pe-9"></p>
+                        <p class="modal-descript fs-5 mb-5 fw-medium border-bottom pb-2"></p>
+
+                        <div class="modal-btn-container d-flex gap-3">
+                          <input type="number" min="1" max="10" placeholder="1" class="modal-select form-control fs-5 text-dark rounded-2 fw-semibold text-center border-2 border-secondary" />
+
+                          <button class="modal-addCart-btn btn btn-primary py-2 px-sm-3 px-2 fs-4 fw-medium border-0 rounded-2" data-bs-dismiss="modal" data-id="">
+                            <i class="fa-solid fa-basket-shopping me-1"></i>
+                            Add &nbsp;<span class="modal-qty"></span>&nbsp; to Order • $<span class="modal-total-price"></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Add Cart Toast -->
+      <div class="toast-container position-fixed p-3">
+        <div id="addCartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+          <div class="toast-header bg-secondary">
+            <div class="text-black d-flex align-items-center">
+              <i class="fa-solid fa-circle-check me-1 fs-4"></i>
+              <h5 class="mb-0">Added to the shopping cart</h5>
+            </div>
+
+            <button type="button" class="btn-close ms-auto btn-close-black opacity-100" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body d-flex align-items-center justify-content-between text-black">
+            <img src="" class="toast-img add-toast-img me-1" />
+            <p class="toast-title me-auto mb-0 fw-semibold"></p>
+            <span class="toast-totalPrice fw-semibold fs-5 me-1"></span>
+          </div>
+        </div>
+      </div>
+      <!-- Remove Cart Toast -->
+      <div class="toast-container position-fixed p-3">
+        <div id="removeCartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+          <div class="toast-header bg-primary align-items-center">
+            <div class="text-white d-flex align-items-center">
+              <i class="fa-solid fa-trash-check fs-4 me-1"></i>
+              <h5 class="mb-0">Removed from shopping cart</h5>
+            </div>
+
+            <button type="button" class="btn-close ms-auto btn-close-white opacity-100" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body d-flex align-items-center justify-content-between text-black">
+            <img src="" class="toast-img remove-toast-img me-1" />
+            <p class="remove-toast-title me-auto mb-0 fw-semibold"></p>
+            <span class="remove-toast-totalPrice fw-semibold fs-5 me-1"></span>
+          </div>
+        </div>
+      </div>
+      <!-- Sale Section -->
+      <section class="sale py-9" id="sale">
+        <div class="container-xl px-xl-2 px-sm-6">
+          <div class="sale__heading text-uppercase text-center">
+            <h2 class="fs-1 heading-primary position-relative d-inline-block fw-semibold mb-0">sale off</h2>
+          </div>
+          <div class="row sale__container mt-7 align-items-center justify-content-center row-gap-md-5 row-gap-8">
+            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-12">
+              <div class="card sale__card rounded-4 border d-block overflow-hidden">
+                <img src="./images/combo funny.png" alt="Nuggets" class="sale__card-img sale__card-img--1" />
+                <div class="sale__card-text-content">
+                  <div class="d-flex gap-3 align-items-center">
+                    <h5 class="sale__card-name text-dark fw-medium mb-0">Fried chicken</h5>
+                    <hr class="hr border-1" />
+                  </div>
+                  <h2 class="sale__card-title fw-semibold lh-base mb-1">Mc Nuggets</h2>
+                  <p class="sale__card-text mb-2 fs-5 fw-medium w-50">buy 1 Mc Nuggets get 1 coca cola</p>
+                  <h3 class="sale__card-price fw-semibold">
+                    <span class="fs-5 text-decoration-line-through">17.2$</span>
+                    16.5$
+                  </h3>
+                  <button class="sale__card-btn btn btn-dark border-0 d-flex align-items-center gap-1 fs-5 fw-medium d-inline">
+                    <i class="fa-solid fa-basket-shopping fa-fw"></i>
+                    Order now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-12">
+              <div class="card sale__card sale__card-middle rounded-4 border d-block overflow-hidden">
+                <img src="./images/salad.png" alt="Salad" class="sale__card-img sale__card-img--2" />
+                <div class="sale__card-text-content">
+                  <div class="d-flex gap-3 align-items-center">
+                    <h5 class="sale__card-name fw-medium mb-0">Vegan</h5>
+                    <hr class="hr border-1" />
+                  </div>
+                  <h2 class="sale__card-title fw-semibold lh-base mb-1">Bacon Salad</h2>
+                  <p class="sale__card-text mb-2 fs-5 fw-medium w-50">tasty bacon salad for vegeterians</p>
+                  <h3 class="sale__card-price fw-semibold">
+                    <span class="fs-5 text-decoration-line-through">10.3$</span>
+                    9.5$
+                  </h3>
+                  <button class="sale__card-btn btn btn-dark border-0 d-flex align-items-center gap-1 fs-5 fw-medium d-inline">
+                    <i class="fa-solid fa-basket-shopping fa-fw"></i>
+                    Order now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-12">
+              <div class="card sale__card rounded-4 border d-block overflow-hidden">
+                <img src="./images/chicken-burger.png" alt="burger" class="sale__card-img sale__card-img--3" />
+                <div class="sale__card-text-content">
+                  <div class="d-flex gap-3 align-items-center">
+                    <h5 class="sale__card-name text-dark fw-medium mb-0">Hamburger</h5>
+                    <hr class="hr border-1" />
+                  </div>
+                  <h2 class="sale__card-title fw-semibold lh-base mb-1">Chicken Burger</h2>
+                  <p class="sale__card-text mb-2 fs-5 fw-medium w-50">buy 1 Chicken Burger get 1 salad</p>
+                  <h3 class="sale__card-price fw-semibold">
+                    <span class="fs-5 text-decoration-line-through">12.5$</span>
+                    11.75$
+                  </h3>
+                  <button class="sale__card-btn btn btn-dark border-0 d-flex align-items-center gap-1 fs-5 fw-medium d-inline">
+                    <i class="fa-solid fa-basket-shopping fa-fw"></i>
+                    Order now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- App Section -->
+      <section class="app" id="app">
+        <div class="container-xl px-xl-2 px-6">
+          <div class="row align-items-center justify-content-md-start justify-content-center row-gap-md-1 row-gap-8">
+            <div class="col-xl-4 col-md-5 col-10 order-xl-0 order-1 ms-lg-9 mt-xl-n8">
+              <div class="image-container text-center">
+                <img
+                  src="./images/App screen.png
+                "
+                  alt="app screen"
+                  class="app__img"
+                />
+              </div>
+            </div>
+            <div class="col-xl-7 col-md-10 col-12 order-xl-1 order-0 ps-xl-8 ms-xl-4">
+              <div class="text-container text-md-start text-center">
+                <h4 class="text-dark-gray fw-medium mb-1">Exclusive offers and more</h4>
+                <h2 class="heading-primary fs-1 mb-0">MCDONALD’S MOBILE APP</h2>
+                <p class="app__text mt-2 mb-md-7 mb-9 fs-5 text-dark fw-normal">
+                  As a global No. 1 fast food brand, McDonald's wishes to bring customers not only delicious and hygienic food of international standards but also the best service experience.
+                </p>
+                <div class="d-flex gap-4 justify-content-md-start justify-content-center flex-wrap">
+                  <button class="app__btn btn d-flex align-items-center py-1 px-4 gap-2 text-start flex-shrink-0">
+                    <i class="fa-brands fa-apple fs-3"></i>
+                    <div>
+                      <p class="fs-6 fw-light mb-0">Download on the</p>
+                      <p class="fs-5 fw-medium mb-0">App Store</p>
+                    </div>
+                  </button>
+                  <button class="app__btn btn d-flex align-items-center py-1 px-4 gap-2 text-start flex-shrink-0">
+                    <i class="fa-brands fa-google-play fs-3"></i>
+                    <div>
+                      <span class="fs-6 fw-light d-block">Download on the</span>
+                      <span class="fs-5 fw-medium d-block">Google Play</span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Search Section -->
+      <section class="search py-9" id="contact">
+        <div class="container-xl px-xl-2 px-6">
+          <div class="row bg-dark text-center rounded-4 d-flex flex-column align-items-center justify-content-center search__container position-relative overflow-hidden">
+            <div class="col-lg-10 col-md-8 col-sm-9">
+              <div class="text-container position-relative z-3">
+                <h2 class="search__title text-light-yellow fs-1 fw-medium text-capitalize mb-0">find Mc donald's store near you</h2>
+                <p class="search__text fs-5 mb-4 text-gray">see the convenience store address with you most</p>
+                <div class="position-relative search__input-container mx-auto">
+                  <input type="text" class="search__input form-control rounded-5 bg-secondary fw-semibold fs-5 py-3 px-5 border-0" placeholder="Typing location" />
+                  <button class="search__btn btn fs-5 py-1 px-sm-5 px-2">See on map</button>
+                </div>
+              </div>
+              <img src="./images/salad.png" alt="salad" class="search__bg-img search__bg-img-1 opacity-50" />
+              <img src="./images/chicken-burger.png" alt="burger" class="search__bg-img search__bg-img-2 opacity-25" />
+              <img src="./images/Menu images/french fries.png" alt="fries" class="search__bg-img search__bg-img-3 opacity-50" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="footer py-9 bg-light-yellow">
+      <div class="container-xl px-xl-2 px-7">
+        <div class="row align-items-center footer__container row-gap-8 text-sm-start text-center">
+          <div class="col-xl-4 col-md-5 col-sm-8 col-12 pe-xl-9 order-md-0 order-2">
+            <div class="d-flex gap-sm-5 gap-4 justify-content-sm-start justify-content-center">
+              <img src="./images/logo-PNG.png" alt="logo" class="img-fluid rounded align-self-start footer__logo-img" />
+              <div class="text-content">
+                <h2 class="footer__logo-title fw-semibold text-dark mb-sm-5 mb-3">Mc Donald’s</h2>
+                <div class="d-flex align-items-center justify-content-center justify-content-center gap-8">
+                  <a href="#" class="icon-link icon-link-hover"><i class="bi footer__icon fab fa-twitter fs-3 text-dark-gray"></i></a>
+                  <a href="#" class="icon-link icon-link-hover"><i class="bi footer__icon fab fa-facebook fs-3 text-dark-gray"></i></a>
+                  <a href="#" class="icon-link icon-link-hover"><i class="bi footer__icon fab fa-facebook-messenger fs-3 text-dark-gray"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-12 px-lg-7 order-md-1 order-0">
+            <h4 class="mb-sm-8 mb-6 text-dark flex-shrink-0">USEFUL LINKS</h4>
+            <ul class="footer__navbar-nav list-unstyled mb-0 vstack gap-4">
+              <li>
+                <a href="#" class="nav-link fw-medium fs-5 text-dark d-inline-block rounded-2">Homepage</a>
+              </li>
+              <li>
+                <a href="#menu" class="nav-link fw-medium fs-5 text-dark d-inline-block rounded-2">Menu</a>
+              </li>
+              <li>
+                <a href="#sale" class="nav-link fw-medium fs-5 text-dark d-inline-block rounded-2">Sale off</a>
+              </li>
+              <li>
+                <a href="#app" class="nav-link fw-medium fs-5 text-dark d-inline-block rounded-2">App</a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-link fw-medium fs-5 text-dark d-inline-block rounded-2">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12 order-md-2 order-1 align-self-start">
+            <h4 class="mb-sm-8 mb-6 text-dark">OPENING HOUR</h4>
+            <ul class="list-unstyled vstack gap-4 mb-0">
+              <li class="fs-5 fw-medium">Monday - Friday:9:00 - 23:00h</li>
+              <li class="fs-5 fw-medium">Saturday:09:00 - 16:00h</li>
+              <li class="fs-5 fw-medium">Sunday:12:00 - 18:00h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- go top btn -->
+    <button class="go-top-btn text-center btn btn-secondary border-0 rounded-circle p-3 position-fixed">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/menu-data.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
