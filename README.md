@@ -8,3 +8,5 @@
 - open source data with json file
 - local storage for saving data
 - sticky navbar & offcanvas
+
+![preview image](./images/screen.png)
